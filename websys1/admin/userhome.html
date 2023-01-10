@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+  <title>نظام استعارة الكتب الالكتروني - ادارة المستخدمين</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+ <link href="css/style.css" rel="stylesheet">
+
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css" />
+
+
+</head>
+<body>
+
+    <div class="container-fluid">
+
+      <div id="header" class="row"></div>
+
+<div class="adminsidebar_container row">
+    <div id="adminsidebar" class="col-lg-3 col-md-4 col-sm-12 col-12 adminsidebar">
+      <div id="adminsidebarinner">
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="bookhome.html">ادارة الكتب</a></li>
+          <li class="selected"><a href="userhome.html">ادارة المستخدمين</a></li>
+          <li><a href="registredbooks.html">الاستعارة (الكتب المحجوزة)</a></li>
+          <li><a href="takenbooks.html">الاستعارة ( الكتب المستعارة)</a></li>
+          <li><a href="borrowingarchive.html">الاستعارة (الارشيف)</a></li>
+          <li><a href="settings.html">الاعدادات</a></li>
+          <li><a href="changepassword.html">تغيير كلمة السر</a></li>
+          <li><a href="#"></a></li>
+        </ul>
+        </div>
+    </div>
+
+
+
+    <div id="adminpanel" class="col-lg-9 col-md-8 col-sm-12 col-12 adminpanel" >
+
+      <div class="adminpanel_inner">
+
+        <div class="adminpanelheader">
+          <div class="page_title_container">
+            <label>صفحة التحكم بالمستخدمين</label>
+          </div>
+        </div>
+
+      <div class="adminpanelbody">
+        <div class="table-responsive">
+        <table id="usertable" class="table gentable">
+          <thead>
+            <tr><th>#</th><th>الاسم</th><th>الايميل</th><th>الحالة</th><th>حذف</th></tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div> 
+      </div>
+
+      <div class="adminpanelfooter">
+
+      </div>
+
+
+      </div>
+
+    </div>
+
+
+
+</div>
+
+
+      </div>
+
+
+
+      <!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">اضافة مستخدم</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        
+        <form>
+          <div class="mb-3 mt-3">
+            <label for="name" class="form-label">الاسم</label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="ادخل اسم المستخدم">
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="email" class="form-label">الايميل</label>
+            <input type="text" class="form-control" name="email" id="email" placeholder="ادخل الايميل">
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="password" class="form-label">كلمة السر</label>
+            <input type="password" class="form-control" name="password" id="password" placeholder="ادخل كلمة السر">
+          </div>
+          <div class="mb-3 mt-3">
+            <label for="passwordc" class="form-label">تأكيد كلمة السر</label>
+            <input type="password" class="form-control" name="passwordc" id="passwordc" placeholder="ادخل تأكيد كلمة السر">
+          </div>
+          <button type="submit" class="btn maincolor1bg">اضافة مستخدم</button>
+        </form> 
+
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">اغلاق</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+<script src="js/script.js"></script>
+
+<script>
+    let currpage = "userhome";
+  let autonum = 1;
+  $(document).ready(function () {
+      usertable =  $('#usertable').DataTable({
+    columns: [
+    { data: 'autonum' },
+    { data: 'name' },
+    { data: 'email' },
+    { data: 'status' },
+    { data: 'delete' },
+  ]
+  });
+    });
+    </script>
+
+<div id="overlay" class="overlay">
+  <img src="images/loading.gif" />
+  </div>
+</body>
+</html>

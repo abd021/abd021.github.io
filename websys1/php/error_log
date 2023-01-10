@@ -1,0 +1,19 @@
+[24-Dec-2022 00:02:33 UTC] PHP Warning:  Use of undefined constant time - assumed 'time' (this will throw an Error in a future version of PHP) in /home/niceurln/public_html/standardsi.com/bookborrowing/php/functions.php on line 386
+[24-Dec-2022 00:02:33 UTC] PHP Warning:  A non-numeric value encountered in /home/niceurln/public_html/standardsi.com/bookborrowing/php/functions.php on line 386
+[24-Dec-2022 00:02:33 UTC] PHP Warning:  A non-numeric value encountered in /home/niceurln/public_html/standardsi.com/bookborrowing/php/functions.php on line 387
+[24-Dec-2022 00:02:33 UTC] PHP Warning:  A non-numeric value encountered in /home/niceurln/public_html/standardsi.com/bookborrowing/php/functions.php on line 387
+[24-Dec-2022 00:02:33 UTC] PHP Warning:  A non-numeric value encountered in /home/niceurln/public_html/standardsi.com/bookborrowing/php/functions.php on line 387
+[24-Dec-2022 00:04:38 UTC] PHP Deprecated:  The behavior of unparenthesized expressions containing both '.' and '+'/'-' will change in PHP 8: '+'/'-' will take a higher precedence in /home/niceurln/public_html/standardsi.com/bookborrowing/php/functions.php on line 387
+[24-Dec-2022 00:05:07 UTC] PHP Warning:  Use of undefined constant time - assumed 'time' (this will throw an Error in a future version of PHP) in /home/niceurln/public_html/standardsi.com/bookborrowing/php/functions.php on line 386
+[24-Dec-2022 00:05:07 UTC] PHP Warning:  A non-numeric value encountered in /home/niceurln/public_html/standardsi.com/bookborrowing/php/functions.php on line 386
+[24-Dec-2022 00:05:07 UTC] PHP Warning:  A non-numeric value encountered in /home/niceurln/public_html/standardsi.com/bookborrowing/php/functions.php on line 387
+[24-Dec-2022 00:05:07 UTC] PHP Warning:  A non-numeric value encountered in /home/niceurln/public_html/standardsi.com/bookborrowing/php/functions.php on line 387
+[24-Dec-2022 00:06:24 UTC] PHP Warning:  Use of undefined constant time - assumed 'time' (this will throw an Error in a future version of PHP) in /home/niceurln/public_html/standardsi.com/bookborrowing/php/functions.php on line 386
+[24-Dec-2022 00:06:24 UTC] PHP Warning:  A non-numeric value encountered in /home/niceurln/public_html/standardsi.com/bookborrowing/php/functions.php on line 386
+[24-Dec-2022 00:31:43 UTC] PHP Warning:  Use of undefined constant time - assumed 'time' (this will throw an Error in a future version of PHP) in /home/niceurln/public_html/standardsi.com/bookborrowing/php/functions.php on line 386
+[24-Dec-2022 00:31:43 UTC] PHP Warning:  A non-numeric value encountered in /home/niceurln/public_html/standardsi.com/bookborrowing/php/functions.php on line 386
+[24-Dec-2022 17:35:03 UTC] PHP Notice:  Trying to access array offset on value of type bool in /home/niceurln/public_html/standardsi.com/bookborrowing/php/functions.php on line 134
+[24-Dec-2022 17:35:03 UTC] PHP Notice:  Trying to access array offset on value of type bool in /home/niceurln/public_html/standardsi.com/bookborrowing/php/functions.php on line 135
+[24-Dec-2022 17:35:03 UTC] PHP Notice:  Trying to access array offset on value of type bool in /home/niceurln/public_html/standardsi.com/bookborrowing/php/functions.php on line 136
+[24-Dec-2022 17:35:03 UTC] PHP Notice:  Trying to access array offset on value of type bool in /home/niceurln/public_html/standardsi.com/bookborrowing/php/functions.php on line 137
+[24-Dec-2022 17:36:50 UTC] PHP Notice:  Undefined index: author in /home/niceurln/public_html/standardsi.com/bookborrowing/php/functions.php on line 137

@@ -1,0 +1,3 @@
+[23-Dec-2022 23:23:00 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/niceurln/public_html/standardsi.com/bookborrowing/admin/php/functions.php on line 808
+[23-Dec-2022 23:23:13 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/niceurln/public_html/standardsi.com/bookborrowing/admin/php/functions.php on line 808
+[30-Dec-2022 15:43:09 UTC] PHP Notice:  Undefined variable: borrowing_id in /home/niceurln/public_html/standardsi.com/bookborrowing/admin/php/functions.php on line 488

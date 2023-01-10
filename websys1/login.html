@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+  <title>نظام استعارة الكتب الالكتروني - صفحة الدخول</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+
+ <link href="css/style.css" rel="stylesheet">
+
+ <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+ <script>
+    currpage = "login";
+ </script>
+
+ <script src="js/script.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+
+    <div class="login_page row d-flex align-items-center justify-content-center">
+
+    <div class="login_form_container col-10 col-sm-10 col-md-8 col-lg-6 col-xl-4">
+
+        <div class="lfc_logo_container pb-4 d-flex justify-content-center">
+            <img src="images/logo.jpg" />
+        </div>
+
+        <form id="login_form" class="login_form">
+
+            <div class="lf_general py-2 text-center">
+                <label>صفحة الدخول</label>
+            </div>
+
+            <div class="lf_one_form_ele py-2">
+                <input type="text" autocomplete="off" class="form-control lf-input-text shadow-none" placeholder="اسم المستخدم" id="email" name="email">
+            </div>
+            <div class="lf_one_form_ele py-2">
+                <input type="password" class="form-control lf-input-text shadow-none" placeholder="كلمة السر" id="password" name="password">
+            </div>
+            <div hidden class="lf_general py-2">
+                <a href="#">هل نسيت كلمة السر؟</a>
+            </div>
+            <div class="lf_one_form_ele py-2 d-grid">
+                <button onclick="loginuser()" class="lf-input-button shadow-none btn-block" type="button">الدخول</button>
+            </div>
+            <div class="lf_general reg py-2" id="hide">
+                <label>هل انت مستخدم جديد؟ <a href="register.html">التسجيل من هنا</a></label>
+            </div>
+            <div class="lf_general py-2">
+                <label><a href="index.html">اضغط هنا للذهاب للصفحة الرئيسية</a></label>
+            </div>
+
+        </form>
+
+    </div>
+
+    </div>
+
+</div>
+
+<div id="overlay" class="overlay">
+    <img src="images/loading.gif" />
+    </div>
+</body>
+</html> 

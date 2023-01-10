@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+  <title>نظام استعارة الكتب الالكتروني - الكتب المحجوزة للاستعارة</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+ <link href="css/style.css" rel="stylesheet">
+
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css" />
+
+
+</head>
+<body>
+
+    <div class="container-fluid">
+      <div id="header" class="row"></div>
+
+<div class="adminsidebar_container row">
+    <div id="adminsidebar" class="col-lg-3 col-md-4 col-sm-12 col-12 adminsidebar">
+      <div id="adminsidebarinner">
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="bookhome.html">ادارة الكتب</a></li>
+          <li><a href="userhome.html">ادارة المستخدمين</a></li>
+          <li class="selected"><a href="registredbooks.html">الاستعارة (الكتب المحجوزة)</a></li>
+          <li><a href="takenbooks.html">الاستعارة ( الكتب المستعارة)</a></li>
+          <li><a href="borrowingarchive.html">الاستعارة (الارشيف)</a></li>
+          <li><a href="settings.html">الاعدادات</a></li>
+          <li><a href="changepassword.html">تغيير كلمة السر</a></li>
+          <li><a href="#"></a></li>
+        </ul>
+        </div>
+    </div>
+
+
+
+    <div id="adminpanel" class="col-lg-9 col-md-8 col-sm-12 col-12 adminpanel" >
+
+      <div class="adminpanel_inner">
+
+        <div class="adminpanelheader">
+          <div class="page_title_container">
+            <label>صفحة الكتب المحجوزة للاستعارة</label>
+          </div>
+        </div>
+
+      <div class="adminpanelbody">
+        <div class="table-responsive">
+        <table id="booksregistertable" class="table gentable">
+          <thead>
+            <tr><th>#</th><th>رقم الاستعارة</th><th>اسم المستخدم</th><th>ايميل المستخدم</th><th>اسم الكتاب</th><th>رقم الكتاب</th><th>تاريخ حجز الكتاب</th><th>الرقم السري</th><th>تأكيد الاستلاف</th><th>حذف</th></tr>
+          </thead>
+          <tbody>
+
+            </tbody>
+          </table>
+      </div> 
+      </div>
+
+      <div class="adminpanelfooter">
+
+      </div>
+
+
+      </div>
+
+    </div>
+
+
+
+</div>
+
+
+      </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+<script src="js/script.js"></script>
+
+<script>
+    let currpage = "regsitredbooks";
+  let autonum = 1;
+  $(document).ready(function () {
+    booksregistertable = $('#booksregistertable').DataTable({
+    columns: [
+    { data: 'autonum' },
+    { data: 'borrowid' },
+    { data: 'name' },
+    { data: 'email' },
+    { data: 'title' },
+    { data: 'bookid' },
+    { data: 'regdate' },
+    { data: 'secret' },
+    { data: 'confirmborrowing' },
+    { data: 'delete' },
+  ]
+  });
+    });
+    </script>
+<div id="overlay" class="overlay">
+  <img src="images/loading.gif" />
+  </div>
+</body>
+</html>

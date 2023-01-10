@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+  <title>نظام استعارة الكتب الالكتروني - البحث في المكتبة و الاستعارة </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+
+ <link href="css/style.css" rel="stylesheet">
+
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ 
+ <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+ <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css" />
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+ <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+
+
+
+</head>
+<body>
+
+    <div class="container">
+
+      <div id="header">
+
+      </div>
+
+
+
+
+
+      <div class="row section">
+
+        <div class="search_form_container">
+
+          <form id="search_form" class="search_form">
+          <div class="input-group mt-3 mb-3">
+            <select id="search_type" name="search_type" class="form-control-lg form-select searchselect">
+              <option value="">البحث حسب</option>
+              <option value="title">عنوان الكتاب</option>
+              <option value="author">اسم المؤلف</option>
+            </select>
+            <input type="text" name="keyword" id="keyword" class="form-control form-control-lg" placeholder="كلمة البحث">
+          </div> 
+          </form>
+
+        </div>
+      </div>
+
+
+
+      <div class="search_results row">
+
+
+        <div class="table-responsive">
+          <table id="searchresults" class="table gentable">
+            <thead>
+              <tr><th>#</th><th>رقم الكتاب</th><th>اسم الكتاب</th><th>اسم المؤلف</th><th>عدد النسخ</th><th>عدد النسخ المتوفرة للاستلاف</th><th>عدد الصفحات</th><th>حجز الكتاب</th></tr>
+            </thead>
+            <tbody>
+
+            </tbody>  
+          </table>
+       
+            </div> 
+
+
+      </div>
+
+
+
+
+
+<div id="footer_all"></div>
+
+      </div>
+
+
+
+<script>
+  currpage = "search";
+  autonum = 1;
+  $(document).ready(function () {
+    search_table = $('#searchresults').DataTable({
+      columns: [
+    { data: 'autonum' },
+    { data: 'bookid' },
+    { data: 'title' },
+    { data: 'author' },
+    { data: 'copyno' },
+    { data: 'copynov' },
+    { data: 'pagesno' },
+    { data: 'status' },
+  ]
+    });
+    });
+    </script>
+
+<div id="overlay" class="overlay">
+  <img src="images/loading.gif" />
+  </div>
+  <script src="js/script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnkXJk94FDr9y-rhaNs_ctTkOfhAgYEhQ"></script>
+</body>
+</html>

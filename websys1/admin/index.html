@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+  <title>نظام استعارة الكتب الالكتروني - الصفحة الرئيسية</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link href="css/style.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <div id="header" class="row">
+
+    </div>
+
+
+    <div class="adminsidebar_container row">
+      <div id="adminsidebar" class="col-lg-3 col-md-4 col-sm-12 col-12 adminsidebar">
+        <div id="adminsidebarinner">
+          <ul>
+            <li class="selected"><a href="index.html">الرئيسية</a></li>
+            <li><a href="bookhome.html">ادارة الكتب</a></li>
+            <li><a href="userhome.html">ادارة المستخدمين</a></li>
+            <li><a href="registredbooks.html">الاستعارة (الكتب المحجوزة)</a></li>
+            <li><a href="takenbooks.html">الاستعارة ( الكتب المستعارة)</a></li>
+            <li><a href="borrowingarchive.html">الاستعارة (الارشيف)</a></li>
+            <li><a href="settings.html">الاعدادات</a></li>
+            <li><a href="changepassword.html">تغيير كلمة السر</a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+
+
+
+      <div id="adminpanel" class="col-lg-9 col-md-8 col-sm-12 col-12 adminpanel">
+
+        <div class="adminpanel_inner">
+
+          <div class="adminpanelheader">
+            <div class="page_title_container">
+              <label>الصفحة الرئيسية</label>
+            </div>
+          </div>
+
+          <div class="adminpanelbody">
+
+            <div class="firstlineadmin row">
+
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="statinner color1bg">
+                  <div>
+                    <h2>عدد الكتب</h2>
+                    <h2 id="bookc"></h2>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="statinner color1bg">
+                  <div>
+                    <h2>عدد المستخدمين</h2>
+                    <h2 id="userc"></h2>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="statinner color1bg">
+                  <div>
+                    <h2>عدد الكتب المستلفة حاليا</h2>
+                    <h2 id="takenc"></h2>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="statinner color1bg">
+                  <div>
+                    <h2>عدد عمليات الاستلاف المنتهية</h2>
+                    <h2 id="archivec"></h2>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row">
+              <img class="img-fluid" src="../images/info.jpg" />
+            </div>
+
+
+          </div>
+
+          <div class="adminpanelfooter">
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+
+
+  <script>
+    let currpage = "index";
+  </script>
+
+
+  <div id="overlay" class="overlay">
+    <img src="images/loading.gif" />
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

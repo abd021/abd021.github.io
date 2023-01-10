@@ -1,0 +1,27 @@
+        <nav class="adminmainmenu navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid">
+             
+              <div class="navbar" id="mynavbar">
+                <a class="navbar-brand" href="javascript:void(0)"><img src="images/logopng.png" /> </a>
+              <ul class="navbar-nav ms-auto">
+                <button  class="sidebar_toggler" onclick="togglesidebar()" type="button">
+                  <ion-icon name="menu-outline"></ion-icon>
+                </button>
+            </ul>
+            </div>
+
+              <div class="navbar" id="mynavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="navbar-brand" href="#" role="button" data-bs-toggle="dropdown">
+                            <label>مرحبا بك <span id="user_full_name_span"></span></label>
+                            <img src="images/profileicon.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+                          </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li><a class="dropdown-item" onclick="logout(event)">تسجيل الخروج</a></li>
+                        </ul>
+                      </li> 
+                </ul>
+              </div>
+            </div>
+          </nav> 
